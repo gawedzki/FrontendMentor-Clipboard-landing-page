@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  font-family: "Bai Jamjuree", sans-serif;
+  color: hsl(201, 11%, 66%);
+}
+body {
+  padding: 120px 0;
+  margin: 0;
+  background-image: url(../images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+h1,
+h2,
+h3 {
+  color: hsl(210, 10%, 33%);
+}
+
+.content {
+  width: 310px;
+  margin: auto;
+  text-align: center;
+}
+
+.logo {
+  display: block;
+  width: 125px;
+  height: 125px;
+  margin: 0 auto 65px auto;
+}
+
+.header {
+  margin-bottom: 40px;
+}
+.header > h1 {
+  font-size: 30px;
+  line-height: 40px;
+}
+.header > p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.download {
+  margin-bottom: 50px;
+}
+.downloadBtn {
+  display: inline-block;
+  width: 100%;
+  border-radius: 26px;
+  line-height: 52px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+}
+.downloadBtn:first-child {
+  background-color: hsl(171, 66%, 44%);
+  box-shadow: 0px 3px 0px hsl(171, 66%, 34%);
+  margin-bottom: 24px;
+}
+.downloadBtn:last-child {
+  background-color: hsl(233, 100%, 64%);
+  box-shadow: 0px 3px 0px hsl(233, 100%, 59%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
