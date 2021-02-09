@@ -43,7 +43,7 @@ p {
 
 /* Section 1 */
 .sctn1 {
-  margin-bottom: 160px;
+  margin: 0 auto 160px auto;
 }
 .sctn1__logo {
   display: block;
@@ -60,11 +60,14 @@ p {
   margin-bottom: 185px;
 }
 .sctn2__header {
-  margin-bottom: 65px;
+  margin: 0 auto 65px auto;
 }
 .sctn2__img {
   width: 100%;
   margin-bottom: 30px;
+}
+.sctn2__img > img {
+  width: 100%;
 }
 .sctn2__body > section {
   margin-bottom: 50px;
@@ -184,8 +187,11 @@ footer > img {
 }
 
 /* Buttons */
+
+/* ADD BOX SHADOWS !!!!!!!!!!!!!!!!!! */
+
 .downloadBtn {
-  display: block;
+  display: inline-block;
   width: 100%;
   border-radius: 26px;
   line-height: 52px;
@@ -213,4 +219,68 @@ footer > img {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    /* padding: 130px 100px 130px 100px; */
+    padding-top: 130px;
+  }
+  h1 {
+    margin-bottom: 22px;
+    font-size: 44px;
+    line-height: normal;
+  }
+  h2 {
+    margin-bottom: 28px;
+    font-size: 36px;
+    line-height: normal;
+  }
+  .main {
+    width: 100%;
+  }
+
+  /* Section 1 */
+  .sctn1 {
+    border: 1px solid black; /*control border - delete after !!!*/
+    width: 700px;
+  }
+  .sctn1__header > p {
+    font-size: 20px;
+  }
+
+  /* Section 2 */
+  .sctn2 {
+    /* width: 100%; */
+  }
+  .sctn2__header {
+    border: 1px solid black; /*control border - delete after !!!*/
+    width: 700px;
+    margin-bottom: 85px;
+  }
+  .sctn2__header > p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .sctn2__img {
+    float: left;
+    width: 60%;
+    transform: translateX(-17%);
+  }
+  .sctn2__body {
+    float: left;
+    width: 40%;
+  }
+
+  .sctn3 {
+    clear: left;
+  }
+
+  .downloadBtn {
+    width: 225px;
+    margin: 0 8px;
+  }
+  .downloadBtn:first-child {
+    margin-bottom: 0;
+  }
 }

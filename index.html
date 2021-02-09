@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="css/styles.css">
+  <!-- <link rel="stylesheet" href="css/styles.css"> -->
+  <link rel="stylesheet" href="css/newstyles.css">
+  <link rel="stylesheet" href="css/breakpoints.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap">
   
   <title>Frontend Mentor | Clipboard landing page</title>
@@ -13,12 +15,12 @@
 
 <body>
   <div class="main">
+    <img class="logo" src="images/logo.svg" alt="logo">
+
     <div class="sctn1">
-      <img class="sctn1__logo" src="images/logo.svg" alt="logo">
-      
       <section class="sctn1__header">
         <h1>A history of everything you copy</h1>
-        <p>Clipboard allows you to track and organize everything you 
+        <p class="p1">Clipboard allows you to track and organize everything you 
           copy. Instantly access your clipboard on all your devices.</p>
       </section>
       
@@ -31,23 +33,25 @@
     <div class="sctn2">
       <section class="sctn2__header">
         <h2>Keep track of your snippets</h2>
-        <p>Clipboard instantly stores any item you copy in the cloud, 
+        <p class="p1 p2">Clipboard instantly stores any item you copy in the cloud, 
           meaning you can access your snippets immediately on all your 
           devices. Our Mac and iOS apps will help you organize everything.</p>
       </section>
 
-      <img class="sctn2__img" src="images/image-computer.png" alt="computer">
+      <div class="sctn2__imgWrap">
+        <img class="sctn2__img" src="images/image-computer.png" alt="computer">
+      </div>
       
       <div class="sctn2__body">
-        <section>
+        <section class="sctn2__sctn">
           <h3>Quick Search</h3>
           <p>Easily search your snippets by content, category, web address, application, and more.</p>
         </section>
-        <section>
+        <section class="sctn2__sctn">
           <h3>iCloud Sync</h3>
           <p>Instantly saves and syncs snippets across all your devices.</p>
         </section>
-        <section>
+        <section class="sctn2__sctn">
           <h3>Complete History</h3>
           <p>Retrieve any snippets from the first moment you started using the app.</p>
         </section>
@@ -57,11 +61,13 @@
     <div class="sctn3">
       <section class="sctn3__header">
         <h2>Access Clipboard Anywhere</h2>
-        <p>Whether you’re on the go, or at your computer, you can access all your Clipboard 
+        <p class="p1 p2">Whether you’re on the go, or at your computer, you can access all your Clipboard 
           snippets in a few simple clicks.</p>
       </section>
         
-      <img class="sctn3__img" src="images/image-devices.png" alt="devices">
+      <div class="sctn3__imgWrap">
+        <img class="sctn3__img" src="images/image-devices.png" alt="devices">
+      </div>
     </div>
     
     <div class="sctn4">

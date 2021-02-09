@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Bai Jamjuree", sans-serif;
+  color: hsl(201, 11%, 66%);
+}
+body {
+  width: 320px;
+  padding: 120px 5px 0 5px;
+  margin: 0 auto;
+  background-image: url(../images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: 100% 363px;
+  text-align: center;
+}
+h1,
+h2,
+h3 {
+  color: hsl(210, 10%, 33%);
+}
+h1 {
+  margin-bottom: 17px;
+  font-size: 30px;
+  line-height: 40px;
+}
+h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  line-height: 34px;
+}
+h3 {
+  margin-bottom: 16px;
+  font-size: 24px;
+  line-height: 24px;
+}
+p {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.main {
+}
+.logo {
+  width: 125px;
+  height: 125px;
+}
+
+/* Section 1 */
+.sctn1 {
+  margin-top: 64px;
+  margin-bottom: 166px;
+}
+.sctn1__header {
+  margin-bottom: 47px;
+}
+
+/* Section 2 */
+.sctn2 {
+  margin-bottom: 182px;
+}
+.sctn2__header {
+  margin-bottom: 65px;
+}
+.sctn2__imgWrap {
+  margin-bottom: 57px;
+}
+.sctn2__img {
+  width: 100%;
+}
+.sctn2__sctn {
+  margin-bottom: 48px;
+}
+.sctn2__sctn:last-child {
+  margin-bottom: 0;
+}
+
+/* Section 3 */
+.sctn3 {
+  margin-bottom: 90px;
+}
+.sctn3__header {
+  margin-bottom: 60px;
+}
+.sctn3__imgWrap {
+  width: 100%;
+}
+.sctn3__img {
+  width: 112%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Footer */
+.socials {
+  display: table; /* To spread icons evenly in line */
+  table-layout: fixed; /* To give table cells same width */
+  width: 50%;
+  margin: auto;
+}
+.socials > a {
+  display: table-cell;
+  height: 24px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.socials__facebook {
+  background-image: url("../images/icon-facebook.svg");
+}
+.socials__twitter {
+  background-image: url("../images/icon-twitter.svg");
+}
+.socials__instagram {
+  background-image: url("../images/icon-instagram.svg");
+}
+.socials > a:hover {
+  /* Change svg color */
+  filter: invert(52%) sepia(100%) saturate(314%) hue-rotate(121deg)
+    brightness(95%) contrast(93%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/* Buttons */
+
+/* ADD BOX SHADOWS !!!!!!!!!!!!!!!!!! */
+
+.downloadBtn {
+  display: inline-block;
+  width: 100%;
+  border-radius: 26px;
+  margin-bottom: 28px;
+  line-height: 52px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+}
+.downloadBtn:first-child {
+  background-color: hsl(171, 66%, 44%);
+  box-shadow: 0px 3px 0px hsl(171, 66%, 34%);
+}
+.downloadBtn:last-child {
+  background-color: hsl(233, 100%, 64%);
+  box-shadow: 0px 3px 0px hsl(233, 100%, 59%);
+  margin-bottom: 0;
+}
+.downloadBtn:hover {
+  opacity: 0.7;
+}
