@@ -6,8 +6,6 @@
   color: hsl(201, 11%, 66%);
 }
 body {
-  width: 320px;
-  padding: 120px 5px 0 5px;
   margin: 0 auto;
   background-image: url(../images/bg-header-mobile.png);
   background-repeat: no-repeat;
@@ -40,12 +38,14 @@ p {
 }
 
 .main {
+  width: 320px;
+  padding: 120px 5px 170px 5px;
+  margin: 0 auto;
 }
-.logo {
+.main__logo {
   width: 125px;
   height: 125px;
 }
-
 /* Section 1 */
 .sctn1 {
   margin-top: 64px;
@@ -54,7 +54,6 @@ p {
 .sctn1__header {
   margin-bottom: 47px;
 }
-
 /* Section 2 */
 .sctn2 {
   margin-bottom: 182px;
@@ -74,13 +73,12 @@ p {
 .sctn2__sctn:last-child {
   margin-bottom: 0;
 }
-
 /* Section 3 */
 .sctn3 {
-  margin-bottom: 90px;
+  margin-bottom: 70px;
 }
 .sctn3__header {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 .sctn3__imgWrap {
   width: 100%;
@@ -91,17 +89,63 @@ p {
   left: 50%;
   transform: translateX(-50%);
 }
+/* Section 4 */
+.sctn4 {
+  margin-bottom: 130px;
+}
+.sctn4__header {
+  margin-bottom: 95px;
+}
+.sctn4__iconWrap {
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+/* Section 5 */
+.sctn5 {
+  margin-bottom: 170px;
+}
+.sctn5__img {
+  display: block;
+  margin: 0 auto 60px auto;
+  transform: scale(0.85);
+}
+/* Section 6 */
+.sctn6__header {
+  margin-bottom: 45px;
+}
 
 /* Footer */
+footer {
+  width: 100%;
+  padding: 50px 0;
+  background-color: hsl(201, 11%, 95%);
+}
+.footer__logo {
+  width: 55px;
+  height: 55px;
+  margin-bottom: 30px;
+}
+.footer__link {
+  display: inline-block;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 48px;
+  text-decoration: none;
+  color: hsl(201, 11%, 50%);
+}
+.footer__link:hover {
+  color: hsl(171, 66%, 44%);
+}
 .socials {
-  display: table; /* To spread icons evenly in line */
-  table-layout: fixed; /* To give table cells same width */
-  width: 50%;
-  margin: auto;
+  width: 190px;
+  margin: 40px auto 0 auto;
 }
 .socials > a {
-  display: table-cell;
+  display: block;
+  float: left;
   height: 24px;
+  width: 33.33%;
   text-align: center;
   background-repeat: no-repeat;
   background-position: center;

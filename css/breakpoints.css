@@ -1,9 +1,11 @@
 @media only screen and (min-width: 740px) {
-  body,
-  /* .main, */
+  .main,
   .sctn1,
   .sctn2__header,
-  .sctn3 {
+  .sctn3,
+  .sctn4__header,
+  .sctn6,
+  .footer__linkWrap {
     width: 700px;
     margin-left: auto;
     margin-right: auto;
@@ -43,16 +45,39 @@
   }
   .sctn2__sctn {
     width: 345px;
-    margin-bottom: 56px;
+    margin: 0 auto 56px auto;
   }
   /* Section 3 */
   .sctn3 {
-    margin: 0 auto 70px auto;
+    margin: 0 auto 75px auto;
   }
   .sctn3__header {
     margin-bottom: 100px;
   }
-
+  /* Section 4 */
+  .sctn4 {
+    margin-bottom: 160px;
+  }
+  .sctn4__header {
+    margin-bottom: 0;
+  }
+  .sctn4__body {
+    display: table;
+    table-layout: fixed;
+    margin: 0 auto;
+  }
+  .sctn4__sctn {
+    display: table-cell;
+    width: 375px;
+    padding: 0 10px;
+  }
+  /* Section 5 */
+  .sctn5 {
+    margin: 0px auto 110px auto;
+  }
+  .sctn5__img {
+    transform: none;
+  }
   /* Buttons */
   .downloadBtn {
     width: 227px;
@@ -60,13 +85,9 @@
   }
 }
 @media only screen and (min-width: 1440px) {
-  body {
+  .main {
     width: 1440px;
   }
-  /* .main {
-    width: 1440px;
-  } */
-
   /* Section 2 */
   .sctn2 {
     overflow: hidden;
@@ -88,12 +109,55 @@
     margin: 0;
     text-align: left;
   }
-
   /* Section 3 */
   .sctn3 {
     clear: left;
   }
   .sctn3__img {
     width: 127%;
+  }
+  /* Section 5 */
+  .sctn5 {
+    display: table;
+    table-layout: fixed;
+    width: 1200px;
+  }
+  .sctn5__imgWrap {
+    display: table-cell;
+  }
+  /* Footer */
+  footer {
+    padding: 22px 0;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .footer__logoWrap {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 370px;
+    height: 100px;
+  }
+  .footer__logo {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .footer__linkWrap {
+    max-width: 700px;
+    display: inline-block;
+  }
+  .footer__link {
+    float: left;
+    width: 26%;
+    text-align: left;
+  }
+  .socials {
+    display: inline-block;
+    width: 370px;
+    margin: 0 auto;
+  }
+  .socials > a {
+    height: 100px;
   }
 }

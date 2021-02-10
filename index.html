@@ -15,7 +15,7 @@
 
 <body>
   <div class="main">
-    <img class="logo" src="images/logo.svg" alt="logo">
+    <img class="main__logo" src="images/logo.svg" alt="logo">
 
     <div class="sctn1">
       <section class="sctn1__header">
@@ -73,26 +73,26 @@
     <div class="sctn4">
       <section class="sctn4__header">
         <h2>Supercharge your workflow</h2>
-        <p>We’ve got the tools to boost your productivity.</p>
+        <p class="p1 p2">We’ve got the tools to boost your productivity.</p>
       </section>
       
       <div class="sctn4__body">
-        <section>
-          <div class="sctn4__icon">
+        <section class="sctn4__sctn">
+          <div class="sctn4__iconWrap">
             <img src="images/icon-blacklist.svg" alt="blacklist-icon">
           </div>
           <h3>Create blacklists</h3>
           <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
         </section>
-        <section>
-          <div class="sctn4__icon">
+        <section class="sctn4__sctn">
+          <div class="sctn4__iconWrap">
             <img src="images/icon-text.svg" alt="text-icon">
           </div>
           <h3>Plain text snippets</h3>
           <p>Remove unwanted formatting from copied text for a consistent look.</p>
         </section>
-        <section>
-          <div class="sctn4__icon">
+        <section class="sctn4__sctn">
+          <div class="sctn4__iconWrap">
             <img src="images/icon-preview.svg" alt="preview-icon">
           </div>
           <h3>Sneak preview</h3>
@@ -102,17 +102,27 @@
     </div>
 
     <div class="sctn5">
-        <img src="images/logo-google.png" alt="logo-google">
-        <img src="images/logo-ibm.png" alt="logo-ibm">
-        <img src="images/logo-microsoft.png" alt="logo-microsoft">
-        <img src="images/logo-hp.png" alt="logo-hp">
-        <img src="images/logo-vector-graphics.png" alt="logo-vector">
+      <div class="sctn5__imgWrap">
+        <img class="sctn5__img" src="images/logo-google.png" alt="logo-google">
+      </div>
+      <div class="sctn5__imgWrap">
+        <img class="sctn5__img" src="images/logo-ibm.png" alt="logo-ibm">
+      </div>
+      <div class="sctn5__imgWrap">
+        <img class="sctn5__img" src="images/logo-microsoft.png" alt="logo-microsoft">
+      </div>
+      <div class="sctn5__imgWrap">
+        <img class="sctn5__img" src="images/logo-hp.png" alt="logo-hp">
+      </div>
+      <div class="sctn5__imgWrap">
+        <img class="sctn5__img" src="images/logo-vector-graphics.png" alt="logo-vector">
+      </div>
     </div>
 
     <div class="sctn6">
       <section class="sctn6__header">
         <h2>Clipboard for iOS and Mac OS</h2>
-        <p>Available for free on the App Store. Download for Mac or iOS, sync with iCloud 
+        <p class="p1 p2">Available for free on the App Store. Download for Mac or iOS, sync with iCloud 
           and you’re ready to start adding to your clipboard.</p>
       </section>
         
@@ -124,16 +134,16 @@
   </div>
 
   <footer>
-    <img src="images/logo.svg" alt="logo">
-    <div class="links">
-      <a href="#">FAQs</a>
-      <a href="#">Contact Us</a>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Press Kit</a>
-      <a href="#">Install Guide</a>
-    </div>
-
-    <div class="socials">
+    <!-- no space between div elements to remove gaps between inline-block elements -->
+    <div class="footer__logoWrap">
+      <img class="footer__logo" src="images/logo.svg" alt="logo">
+    </div><div class="footer__linkWrap">
+      <a class="footer__link" href="#">FAQs</a>
+      <a class="footer__link" href="#">Contact Us</a>
+      <a class="footer__link" href="#">Privacy Policy</a>
+      <a class="footer__link" href="#">Press Kit</a>
+      <a class="footer__link" href="#">Install Guide</a>
+    </div><div class="socials">
       <a class="socials__facebook" href="#"></a>
       <a class="socials__twitter" href="#"></a>
       <a class="socials__instagram" href="#"></a>
